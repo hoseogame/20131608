@@ -1,6 +1,7 @@
 #pragma once
 #include"Define.h"
-class GOAL_DAE
+#include"Object.h"
+class GOAL_DAE :public Object
 {
 private:
 	int nMoveX, nMoveY;     // 이동 좌표 
@@ -10,6 +11,9 @@ private:
 	clock_t	OldTime;	    // 이전 이동 시간
 	int	nDist;				// 이동 거리
 public:
+	void Init(int,int);
+	void Update(int, int);
+	void Render(int, int);
 	void Init(int, int, int, clock_t, int);
 	void Update(clock_t, int);
 	void Render(int);

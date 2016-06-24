@@ -1,5 +1,17 @@
 #include"goaldae.h"
 
+void GOAL_DAE::Init(int, int)
+{
+}
+
+void GOAL_DAE::Update(int, int)
+{
+}
+
+void GOAL_DAE::Render(int, int)
+{
+}
+
 void GOAL_DAE::Init(int _nGoalDaeX, int _nGoalDaeY, int _nGoalDaeLength, clock_t _MoveTime, int _nDist)
 {
 	int _nLength;
